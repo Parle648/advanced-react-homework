@@ -66,3 +66,20 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+button {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007b9a;
+}
