@@ -4,11 +4,13 @@ import { Provider } from "react-redux"
 import { appStateStore } from "./store"
 import UserDetailsPage from "../pages/UserDetailsPage"
 import Home from "../pages/Home"
+import Header from "../widgets/Header"
 
 function App() {
   return (
     <Provider store={appStateStore}>
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/users" element={<UsersPage />}></Route>
