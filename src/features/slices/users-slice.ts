@@ -1,12 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit"
-
-interface IUser {
-  id: number
-  email: string
-  first_name: string
-  last_name: string
-  avatar: string
-}
+import { IUser } from "../../shared/types/interfaces"
 
 interface IUserSlice {
   users: IUser[]
