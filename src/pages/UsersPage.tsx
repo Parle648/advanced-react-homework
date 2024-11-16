@@ -1,4 +1,5 @@
 import UsersList from "../entities/UsersList"
+import CreateUserForm from "../features/CreateUserForm"
 import { IUser } from "../shared/types/interfaces"
 
 const users: IUser[] = [
@@ -47,7 +48,12 @@ const users: IUser[] = [
 ]
 
 const UsersPage = () => {
-  return <UsersList users={users} />
+  return (
+    <>
+      <CreateUserForm />
+      <UsersList users={users} />
+    </>
+  )
 }
 
 export default UsersPage

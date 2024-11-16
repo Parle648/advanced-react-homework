@@ -1,7 +1,7 @@
 import { FC } from "react"
-import { IUser } from "../../shared/types/interfaces"
 import "./styles.css"
 import UserCard from "../UserCard"
+import { IUser } from "../../shared/types/interfaces"
 
 const UsersList: FC<{ users: IUser[] }> = ({ users }) => {
   return (
