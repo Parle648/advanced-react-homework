@@ -1,0 +1,18 @@
+.hover-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+.hover-button:hover {
+  background-color: green;
+  transform: scale(1.1);
+}
+
+.hover-button:hover::after {
+  content: " Готово";
+}

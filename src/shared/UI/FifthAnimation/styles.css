@@ -1,0 +1,22 @@
+.multi-step-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 50px auto;
+  animation: multiStep 7s ease-in-out forwards;
+}
+
+@keyframes multiStep {
+  0% {
+    background-color: red;
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    background-color: green;
+    transform: scale(2);
+  }
+  100% {
+    background-color: red;
+    transform: scale(1) rotate(180deg);
+  }
+}
