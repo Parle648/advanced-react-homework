@@ -1,0 +1,19 @@
+.slide-in-box {
+  width: 100px;
+  height: 100px;
+  background-color: #00f;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1.5s ease-in-out 0.3s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,11 @@
+.transform-box {
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+  margin: 50px auto;
+  transition: transform 0.5s ease;
+}
+
+.transform-box:hover {
+  transform: scale(1.5) rotate(45deg);
+}
