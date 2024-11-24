@@ -1,12 +1,11 @@
 import UsersList from "../entities/UsersList"
-import CreateUserForm from "../features/CreateUserForm"
-import { users } from "../shared/constants/users-mock-data"
+import AddUserForm from "../features/AddUserForm"
 
 const UsersPage = () => {
   return (
     <>
-      <CreateUserForm />
-      <UsersList users={users} />
+      <AddUserForm />
+      <UsersList />
     </>
   )
 }
