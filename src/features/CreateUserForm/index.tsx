@@ -28,7 +28,10 @@ const CreateUserForm: FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(createUserRequest)}>
+    <form
+      onSubmit={handleSubmit(createUserRequest)}
+      style={{ marginTop: "150px" }}
+    >
       <h5>Enter user email</h5>
       <input
         {...register("email", {
